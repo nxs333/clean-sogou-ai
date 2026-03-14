@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下页下雪的工具小站 - 找回纯净系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        /* 底部滚动条动画 */
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .scroll-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 20s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-indigo-600">下页下雪的工具小站</span>
+            <div class="space-x-4">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600">功能说明</a>
+                <a href="#donate" class="text-gray-600 hover:text-indigo-600 font-medium">支持作者</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">一键封杀流氓插件，还你清爽电脑</h1>
+            <p class="text-lg mb-8 opacity-90">针对搜狗“AI汪仔”顽固组件，采用内核级劫持+目录死锁技术，永不反弹。</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="PureClean_Sogou_Killer.bat" download class="bg-white text-indigo-600 px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-gray-100 transition">立即下载免费版 (v1.0)</a>
+                <a href="https://github.com" class="bg-transparent border border-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-indigo-600 transition">查看开源代码</a>
+            </div>
+            <p class="mt-4 text-sm opacity-75">支持 Win10 / Win11 | 绿色免安装 | 3KB</p>
+        </div>
+    </header>
+
+    <section id="features" class="py-16 max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">为什么选择我们？</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-indigo-500 mb-4 font-bold text-xl">01. 内核级拦截</div>
+                <p class="text-gray-600">通过映像劫持技术，从系统底层阻止流氓程序启动。</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-indigo-500 mb-4 font-bold text-xl">02. 目录死锁</div>
+                <p class="text-gray-600">暴力夺取顽固目录权限并施加权限封印，让流氓软件无法再次下载补丁。</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-indigo-500 mb-4 font-bold text-xl">03. 永久免费</div>
+                <p class="text-gray-600">承诺工具永久免费使用，只做纯粹的清理。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">觉得好用？请作者喝杯咖啡 ☕</h2>
+            <p class="text-gray-600 mb-8">工具完全免费开发和维护，您的打赏是我更新更多清理工具的最大动力。</p>
+            <div class="flex justify-center gap-8">
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="wechat.jpg" alt="微信收款码" class="w-40 h-40 bg-gray-200 mb-2 flex items-center justify-center text-gray-400 italic">
+                    <span class="text-sm font-medium text-gray-700">微信支付</span>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="alipay.jpg" alt="支付宝收款码" class="w-40 h-40 bg-gray-200 mb-2 flex items-center justify-center text-gray-400 italic">
+                    <span class="text-sm font-medium text-gray-700">支付宝支付</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-indigo-600 text-white py-2 overflow-hidden relative">
+        <div class="scroll-text">
+            感谢以下用户的打赏支持：*莫莫 ￥1.00* &nbsp;&nbsp;&nbsp; *大大宝 ￥6.66*备注：好用！ &nbsp;&nbsp;&nbsp; *以及所有默默支持的纯净系统爱好者！*
+        </div>
+    </div>
+
+    <footer class="bg-white py-8 border-t border-gray-200">
+        <div class="text-center text-gray-500 text-sm">
+            &copy; 2026 下页下雪的工具小站. All Rights Reserved. <br>
+            提醒：本工具仅用于系统优化，请在合法范围内使用。
+        </div>
+    </footer>
+
+</body>
+</html>
